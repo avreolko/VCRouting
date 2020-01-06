@@ -12,6 +12,7 @@
 		A789E32223C3132900C3E730 /* UIViewController+Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789E32123C3132900C3E730 /* UIViewController+Routing.swift */; };
 		A789E32823C319F000C3E730 /* ModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789E32723C319F000C3E730 /* ModuleAssembly.swift */; };
 		A789E32D23C32EE000C3E730 /* ModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789E32C23C32EE000C3E730 /* ModuleIO.swift */; };
+		A789E32F23C32F8000C3E730 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A789E32E23C32F8000C3E730 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A789E32123C3132900C3E730 /* UIViewController+Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Routing.swift"; sourceTree = "<group>"; };
 		A789E32723C319F000C3E730 /* ModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleAssembly.swift; sourceTree = "<group>"; };
 		A789E32C23C32EE000C3E730 /* ModuleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleIO.swift; sourceTree = "<group>"; };
+		A789E32E23C32F8000C3E730 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		A789E30923C3130B00C3E730 = {
 			isa = PBXGroup;
 			children = (
+				A789E32E23C32F8000C3E730 /* README.md */,
 				A789E31523C3130B00C3E730 /* VCRouting */,
 				A789E31423C3130B00C3E730 /* Products */,
 			);
@@ -142,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A789E32F23C32F8000C3E730 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
