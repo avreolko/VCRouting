@@ -8,19 +8,6 @@
 
 import Foundation
 
-public struct None { }
-
-public struct ModuleIO<InputData: Any, OutputData: Any> {
-
-    let inputData: InputData
-    let outputHandler: (OutputData) -> Void
-
-    init(inputData: InputData, outputHandler: @escaping (OutputData) -> Void = { _ in }) {
-        self.inputData = inputData
-        self.outputHandler = outputHandler
-    }
-}
-
 public protocol IModuleAssembly {
     func makeModule() -> Module
 }
