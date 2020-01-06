@@ -13,10 +13,16 @@ public enum PresentationType {
     case modal(UIModalTransitionStyle, UIModalPresentationStyle)
     case push
     
-    static let defaultModal = PresentationType.modal(.crossDissolve, .overCurrentContext)
+    public static let defaultModal = PresentationType.modal(.crossDissolve, .overCurrentContext)
 }
 
 public struct Module {
+
     let viewController: UIViewController
-    var presentationType: PresentationType = .defaultModal
+
+    public var presentationType: PresentationType = .defaultModal
+
+    public init(viewController: UIViewController) {
+        self.viewController = viewController
+    }
 }

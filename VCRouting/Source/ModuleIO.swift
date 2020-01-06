@@ -8,14 +8,14 @@
 
 import Foundation
 
-public struct None { }
+public struct None { public init() {} }
 
 public struct ModuleIO<InputData: Any, OutputData: Any> {
 
-    let inputData: InputData
-    let outputHandler: (OutputData) -> Void
+    public let inputData: InputData
+    public let outputHandler: (OutputData) -> Void
 
-    init(inputData: InputData, outputHandler: @escaping (OutputData) -> Void = { _ in }) {
+    public init(inputData: InputData, outputHandler: @escaping (OutputData) -> Void = { _ in }) {
         self.inputData = inputData
         self.outputHandler = outputHandler
     }
