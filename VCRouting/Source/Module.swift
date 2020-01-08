@@ -18,7 +18,7 @@ public enum PresentationType {
 
 public struct Module {
 
-    let viewController: UIViewController
+    public let viewController: UIViewController
 
     public var presentationType: PresentationType = .defaultModal
 
