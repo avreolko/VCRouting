@@ -13,6 +13,12 @@
 		A789E32823C319F000C3E730 /* ModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789E32723C319F000C3E730 /* ModuleAssembly.swift */; };
 		A789E32D23C32EE000C3E730 /* ModuleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789E32C23C32EE000C3E730 /* ModuleIO.swift */; };
 		A789E32F23C32F8000C3E730 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A789E32E23C32F8000C3E730 /* README.md */; };
+		A79379C023C74142009A73A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79379BF23C74142009A73A2 /* AppDelegate.swift */; };
+		A79379C923C74143009A73A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79379C823C74143009A73A2 /* Assets.xcassets */; };
+		A79379CC23C74143009A73A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79379CA23C74143009A73A2 /* LaunchScreen.storyboard */; };
+		A79379D323C7426B009A73A2 /* ModuleBuildersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79379D223C7426B009A73A2 /* ModuleBuildersFactory.swift */; };
+		A79379D623C742D6009A73A2 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79379D523C742D6009A73A2 /* TabBarAssembly.swift */; };
+		A79379D823C742E5009A73A2 /* PlainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79379D723C742E5009A73A2 /* PlainAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +30,25 @@
 		A789E32723C319F000C3E730 /* ModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleAssembly.swift; sourceTree = "<group>"; };
 		A789E32C23C32EE000C3E730 /* ModuleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleIO.swift; sourceTree = "<group>"; };
 		A789E32E23C32F8000C3E730 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A79379BD23C74142009A73A2 /* VCRoutingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCRoutingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A79379BF23C74142009A73A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A79379C823C74143009A73A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A79379CB23C74143009A73A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A79379CD23C74143009A73A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79379D223C7426B009A73A2 /* ModuleBuildersFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleBuildersFactory.swift; sourceTree = "<group>"; };
+		A79379D523C742D6009A73A2 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
+		A79379D723C742E5009A73A2 /* PlainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A789E31023C3130B00C3E730 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79379BA23C74142009A73A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +63,7 @@
 			children = (
 				A789E32E23C32F8000C3E730 /* README.md */,
 				A789E31523C3130B00C3E730 /* VCRouting */,
+				A79379BE23C74142009A73A2 /* VCRoutingDemo */,
 				A789E31423C3130B00C3E730 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				A789E31323C3130B00C3E730 /* VCRouting.framework */,
+				A79379BD23C74142009A73A2 /* VCRoutingDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +96,36 @@
 				A789E32723C319F000C3E730 /* ModuleAssembly.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		A79379BE23C74142009A73A2 /* VCRoutingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A79379BF23C74142009A73A2 /* AppDelegate.swift */,
+				A79379C823C74143009A73A2 /* Assets.xcassets */,
+				A79379CA23C74143009A73A2 /* LaunchScreen.storyboard */,
+				A79379CD23C74143009A73A2 /* Info.plist */,
+				A79379D123C741EA009A73A2 /* Source */,
+			);
+			path = VCRoutingDemo;
+			sourceTree = "<group>";
+		};
+		A79379D123C741EA009A73A2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A79379D423C742C4009A73A2 /* Modules */,
+				A79379D223C7426B009A73A2 /* ModuleBuildersFactory.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A79379D423C742C4009A73A2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A79379D523C742D6009A73A2 /* TabBarAssembly.swift */,
+				A79379D723C742E5009A73A2 /* PlainAssembly.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,18 +160,39 @@
 			productReference = A789E31323C3130B00C3E730 /* VCRouting.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		A79379BC23C74142009A73A2 /* VCRoutingDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A79379CE23C74143009A73A2 /* Build configuration list for PBXNativeTarget "VCRoutingDemo" */;
+			buildPhases = (
+				A79379B923C74142009A73A2 /* Sources */,
+				A79379BA23C74142009A73A2 /* Frameworks */,
+				A79379BB23C74142009A73A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VCRoutingDemo;
+			productName = VCRoutingDemo;
+			productReference = A79379BD23C74142009A73A2 /* VCRoutingDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A789E30A23C3130B00C3E730 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Valentin Cherepyanko";
 				TargetAttributes = {
 					A789E31223C3130B00C3E730 = {
 						CreatedOnToolsVersion = 11.3;
 						LastSwiftMigration = 1130;
+					};
+					A79379BC23C74142009A73A2 = {
+						CreatedOnToolsVersion = 11.3;
 					};
 				};
 			};
@@ -136,6 +210,7 @@
 			projectRoot = "";
 			targets = (
 				A789E31223C3130B00C3E730 /* VCRouting */,
+				A79379BC23C74142009A73A2 /* VCRoutingDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -146,6 +221,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A789E32F23C32F8000C3E730 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79379BB23C74142009A73A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79379CC23C74143009A73A2 /* LaunchScreen.storyboard in Resources */,
+				A79379C923C74143009A73A2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +247,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A79379B923C74142009A73A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A79379D323C7426B009A73A2 /* ModuleBuildersFactory.swift in Sources */,
+				A79379D623C742D6009A73A2 /* TabBarAssembly.swift in Sources */,
+				A79379D823C742E5009A73A2 /* PlainAssembly.swift in Sources */,
+				A79379C023C74142009A73A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A79379CA23C74143009A73A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A79379CB23C74143009A73A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A789E31923C3130B00C3E730 /* Debug */ = {
@@ -337,6 +443,42 @@
 			};
 			name = Release;
 		};
+		A79379CF23C74143009A73A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H9P6MMBWDC;
+				INFOPLIST_FILE = VCRoutingDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vc.VCRoutingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A79379D023C74143009A73A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H9P6MMBWDC;
+				INFOPLIST_FILE = VCRoutingDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vc.VCRoutingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -354,6 +496,15 @@
 			buildConfigurations = (
 				A789E31C23C3130B00C3E730 /* Debug */,
 				A789E31D23C3130B00C3E730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A79379CE23C74143009A73A2 /* Build configuration list for PBXNativeTarget "VCRoutingDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79379CF23C74143009A73A2 /* Debug */,
+				A79379D023C74143009A73A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

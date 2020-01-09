@@ -8,6 +8,7 @@
 
 import UIKit
 
+// reference to this abstraction should always be weak
 public protocol IRouting: AnyObject {
     func present(module: Module)
     func dismissCurrentViewController()
