@@ -15,6 +15,7 @@ public protocol IRouting: AnyObject {
 }
 
 extension UIViewController: IRouting {
+
     public func present(module: Module) {
         switch module.presentationType {
         case .modal(let modalTransitionStyle, let modalPresentationStyle):
@@ -38,12 +39,12 @@ private extension UIViewController {
               functionName:  String = #function,
               lineNumber: Int = #line) {
 
-        guard let navigator = self.navigationController else {
+        guard let navigationController = self.navigationController else {
             assertionFailure("There is no navigation controller on this view controller. Check \(functionName):\(lineNumber)")
             return
         }
         
-        navigator.pushViewController(viewController, animated: animated)
+        navigationController.pushViewController(viewController, animated: animated)
     }
     
     func showModal(viewController: UIViewController, animated: Bool) {

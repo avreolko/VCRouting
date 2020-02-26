@@ -13,7 +13,7 @@ public enum PresentationType {
     case modal(UIModalTransitionStyle, UIModalPresentationStyle)
     case push
     
-    public static let defaultModal = PresentationType.modal(.crossDissolve, .overCurrentContext)
+    public static let defaultModal = PresentationType.modal(.coverVertical, .fullScreen)
 }
 
 public struct Module {
