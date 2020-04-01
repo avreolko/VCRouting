@@ -10,17 +10,17 @@ import UIKit
 
 public enum PresentationType {
 
-    case modal(UIModalTransitionStyle, UIModalPresentationStyle)
-    case push
+    case modally(UIModalTransitionStyle, UIModalPresentationStyle)
+    case pushing
     
-    public static let defaultModal = PresentationType.modal(.coverVertical, .fullScreen)
+    public static let defaultModally = PresentationType.modally(.coverVertical, .fullScreen)
 }
 
 public struct Module {
 
     public let viewController: UIViewController
 
-    public var presentationType: PresentationType = .defaultModal
+    public var presentationType: PresentationType = .defaultModally
 
     public init(viewController: UIViewController) {
         self.viewController = viewController

@@ -18,11 +18,11 @@ extension UIViewController: IRouting {
 
     public func present(module: Module) {
         switch module.presentationType {
-        case .modal(let modalTransitionStyle, let modalPresentationStyle):
+        case .modally(let modalTransitionStyle, let modalPresentationStyle):
             module.viewController.modalTransitionStyle = modalTransitionStyle
             module.viewController.modalPresentationStyle = modalPresentationStyle
             self.showModal(viewController: module.viewController, animated: true)
-        case .push:
+        case .pushing:
             self.push(viewController: module.viewController, animated: true)
         }
     }
